@@ -308,4 +308,30 @@ document.addEventListener('DOMContentLoaded', () => {
             doc.save(`cropmind-report-${pred.crop}-${dateStrFile}.pdf`);
         });
     }
+
+    const shareResultBtn = document.getElementById('share-result-btn');
+    if (shareResultBtn) {
+        shareResultBtn.addEventListener('click', () => {
+            if (!window.lastPrediction) return;
+            
+            // Generate 8-char token
+            const token = Math.random().toString(36).substring(2, 10);
+            
+            // Store in localStorage
+            localStorage.setItem(`cropmind_share_${token}`, JSON.stringify(window.lastPrediction));
+            
+            // Construct URL
+            const url = `${window.location.origin}/result/${token}`;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(url).then(() => {
+                const toastEl = document.getElementById('share-toast');
+                const toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            }).catch(err => {
+                console.error('Failed to copy link: ', err);
+                alert(`Link: ${url}`);
+            });
+        });
+    }
 });

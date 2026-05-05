@@ -13,3 +13,7 @@ def index():
         with open(metrics_path, 'r') as f:
             metrics = json.load(f)
     return render_template('index.html', metrics=metrics)
+
+@main_bp.route('/result/<token>')
+def shared_result(token):
+    return render_template('result.html', token=token)

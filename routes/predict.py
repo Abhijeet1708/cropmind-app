@@ -46,13 +46,16 @@ def predict():
         feature_importance_dict = {feat: float(imp) for feat, imp in zip(required_features, importances)}
         
         crop_info = knowledge.get(predicted_crop, {})
+        rotation = current_app.config.get('ROTATION', {})
+        crop_rotation = rotation.get(predicted_crop, {})
         
         return jsonify({
             "crop": predicted_crop,
             "confidence": float(confidence),
             "description": crop_info.get('description', 'No description available.'),
             "emoji": crop_info.get('emoji', '🌱'),
-            "feature_importance": feature_importance_dict
+            "feature_importance": feature_importance_dict,
+            "rotation": crop_rotation
         })
         
     except Exception as e:

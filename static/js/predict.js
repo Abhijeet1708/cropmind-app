@@ -89,6 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Render Chart
             renderChart(result.feature_importance);
             
+            // Render Rotation
+            if (result.rotation) {
+                renderRotation(result.rotation);
+            }
+            
         } catch (error) {
             alert(`Error: ${error.message}`);
         } finally {
@@ -142,5 +147,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+    }
+
+    function renderRotation(rotation) {
+        const container = document.getElementById('rotation-container');
+        container.innerHTML = `
+            <h6 class="fw-bold poppins-font border-bottom pb-2 mb-4 mt-5">Recommended 3-Season Rotation Plan</h6>
+            <div class="row g-3 mb-3 position-relative">
+                <div class="d-none d-md-block position-absolute border-top border-2 border-dashed" style="top: 50%; width: 90%; left: 5%; z-index: 0; opacity: 0.2;"></div>
+                
+                <div class="col-md-4 position-relative z-1">
+                    <div class="card h-100 border-0 shadow-sm" style="background-color: var(--primary-green); color: white;">
+                        <div class="card-body text-center">
+                            <div class="small text-white-50 text-uppercase tracking-wider mb-2 fw-bold">Now &bull; Season 1</div>
+                            <div class="display-4 mb-2">${rotation.season1.emoji}</div>
+                            <h5 class="fw-bold poppins-font">${rotation.season1.name}</h5>
+                            <p class="small mb-0 opacity-75">${rotation.season1.soil_effect}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative z-1">
+                    <div class="card h-100 border-0 shadow-sm" style="background-color: var(--accent-amber); color: white;">
+                        <div class="card-body text-center">
+                            <div class="small text-white-50 text-uppercase tracking-wider mb-2 fw-bold">Next &bull; Season 2</div>
+                            <div class="display-4 mb-2">${rotation.season2.emoji}</div>
+                            <h5 class="fw-bold poppins-font">${rotation.season2.name}</h5>
+                            <p class="small mb-0 opacity-75">${rotation.season2.soil_effect}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative z-1">
+                    <div class="card h-100 border-0 shadow-sm" style="background-color: var(--accent-blue); color: white;">
+                        <div class="card-body text-center">
+                            <div class="small text-white-50 text-uppercase tracking-wider mb-2 fw-bold">Following &bull; Season 3</div>
+                            <div class="display-4 mb-2">${rotation.season3.emoji}</div>
+                            <h5 class="fw-bold poppins-font">${rotation.season3.name}</h5>
+                            <p class="small mb-0 opacity-75">${rotation.season3.soil_effect}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-info border-0 shadow-sm small">
+                <strong>Agronomic Rationale:</strong> ${rotation.rationale}
+            </div>
+        `;
     }
 });

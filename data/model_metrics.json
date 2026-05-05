@@ -1,0 +1,9 @@
+{
+    "accuracy": 0.99,
+    "precision": 0.98,
+    "recall": 0.99,
+    "f1_score": 0.98,
+    "training_samples": 1760,
+    "test_samples": 440,
+    "num_classes": 22
+}

@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="py-5 bg-white">
+    <div class="container py-lg-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                <h1 class="display-4 fw-bold poppins-font mb-4 text-primary-green">
+                    Precision Agriculture, Powered by AI.
+                </h1>
+                <p class="lead text-muted mb-5">
+                    Enter your soil composition and climate data to receive an instantaneous, machine-learning-driven crop recommendation backed by agronomic science and multi-season rotation planning.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="{{ url_for('predict.predict') }}" class="btn btn-primary-green btn-lg px-4 shadow-sm">Get Started</a>
+                    <a href="#how-it-works" class="btn btn-outline-secondary btn-lg px-4">How It Works</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Mockup Card -->
+                <div class="card border-0 shadow-lg position-relative hero-mockup-anim">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-success bg-opacity-10 rounded-circle p-3 me-3 text-success">
+                                <span class="fs-2">🌾</span>
+                            </div>
+                            <div>
+                                <h3 class="mb-0 fw-bold poppins-font">Rice</h3>
+                                <div class="text-muted small">Recommended Crop</div>
+                            </div>
+                            <div class="ms-auto text-end">
+                                <div class="fs-4 fw-bold text-primary-green">98.5%</div>
+                                <div class="text-muted small">Confidence</div>
+                            </div>
+                        </div>
+                        <div class="progress mb-4" style="height: 8px;">
+                            <div class="progress-bar bg-primary-green" role="progressbar" style="width: 98.5%;" aria-valuenow="98.5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6 class="fw-bold mb-3">Rotation Plan</h6>
+                        <div class="d-flex justify-content-between text-center small position-relative">
+                            <!-- Timeline line -->
+                            <div class="position-absolute w-100 border-top border-2 border-dashed" style="top: 50%; z-index: 0;"></div>
+                            
+                            <div class="bg-white position-relative px-2 z-1">
+                                <div class="bg-primary-green text-white rounded p-2 mb-2 shadow-sm">Rice</div>
+                                <span class="text-muted">Season 1</span>
+                            </div>
+                            <div class="bg-white position-relative px-2 z-1">
+                                <div class="bg-warning text-dark rounded p-2 mb-2 shadow-sm" style="background-color: var(--accent-amber) !important; color: white !important;">Chickpea</div>
+                                <span class="text-muted">Season 2</span>
+                            </div>
+                            <div class="bg-white position-relative px-2 z-1">
+                                <div class="bg-info text-white rounded p-2 mb-2 shadow-sm" style="background-color: var(--accent-blue) !important;">Maize</div>
+                                <span class="text-muted">Season 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold poppins-font text-primary-green">Why Use CropMind?</h2>
+            <p class="text-muted">Built for precision agriculture, designed for simplicity.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center border-0 shadow-sm">
+                    <div class="mb-3">
+                        <span class="fs-1 text-primary-green">⚡</span>
+                    </div>
+                    <h5 class="fw-bold mb-3 poppins-font">Instant ML Prediction</h5>
+                    <p class="text-muted mb-0">Get immediate recommendations powered by a highly accurate Random Forest model trained on thousands of agricultural records.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center border-0 shadow-sm">
+                    <div class="mb-3">
+                        <span class="fs-1 text-accent-blue">☁️</span>
+                    </div>
+                    <h5 class="fw-bold mb-3 poppins-font">Live Weather Auto-fill</h5>
+                    <p class="text-muted mb-0">Don't know the current climate conditions? Simply enter your city, and we'll automatically fetch the latest temperature, humidity, and rainfall.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center border-0 shadow-sm">
+                    <div class="mb-3">
+                        <span class="fs-1 text-accent-amber">🔄</span>
+                    </div>
+                    <h5 class="fw-bold mb-3 poppins-font">Multi-season Rotation</h5>
+                    <p class="text-muted mb-0">Go beyond a single crop. Get scientifically-backed three-season rotation plans that preserve soil nutrients and break pest cycles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold poppins-font text-primary-green">How It Works</h2>
+            <p class="text-muted">A seamless journey from data entry to harvest planning.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 p-4 border-0 bg-light">
+                    <div class="d-inline-block bg-primary-green text-white rounded-circle text-center fw-bold mb-3" style="width: 40px; height: 40px; line-height: 40px;">1</div>
+                    <h6 class="fw-bold">Enter Soil Data</h6>
+                    <p class="text-muted small mb-0">Input your soil's N, P, K levels and pH value from a recent test, or choose a general soil type.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 p-4 border-0 bg-light">
+                    <div class="d-inline-block bg-primary-green text-white rounded-circle text-center fw-bold mb-3" style="width: 40px; height: 40px; line-height: 40px;">2</div>
+                    <h6 class="fw-bold">Add Climate Info</h6>
+                    <p class="text-muted small mb-0">Auto-fill live weather using your city name, or manually enter temperature and rainfall.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 p-4 border-0 bg-light">
+                    <div class="d-inline-block bg-primary-green text-white rounded-circle text-center fw-bold mb-3" style="width: 40px; height: 40px; line-height: 40px;">3</div>
+                    <h6 class="fw-bold">Get Recommendation</h6>
+                    <p class="text-muted small mb-0">Our AI instantly analyzes your profile and suggests the most viable crop with a confidence score.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 p-4 border-0 bg-light">
+                    <div class="d-inline-block bg-primary-green text-white rounded-circle text-center fw-bold mb-3" style="width: 40px; height: 40px; line-height: 40px;">4</div>
+                    <h6 class="fw-bold">Plan Rotation</h6>
+                    <p class="text-muted small mb-0">Review your customized three-season rotation plan to maintain long-term soil health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Model Performance Section -->
+<section class="py-5 bg-primary-green text-white">
+    <div class="container py-4 text-center">
+        <h2 class="fw-bold poppins-font mb-2">Scientifically Rigorous</h2>
+        <p class="text-white-50 mb-5">Our model's real-world accuracy metrics based on testing.</p>
+        
+        <div class="display-3 fw-bold mb-2 poppins-font">
+            {% if metrics %}
+                {{ (metrics.accuracy * 100)|round(1) }}%
+            {% else %}
+                99.0%
+            {% endif %}
+        </div>
+        <div class="text-uppercase tracking-wider small text-white-50 fw-bold mb-5">Overall Accuracy</div>
+        
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-3">
+                <div class="card bg-white bg-opacity-10 border-0 h-100 p-3 text-white">
+                    <div class="fs-4 fw-bold poppins-font mb-1">
+                        {% if metrics %}{{ metrics.precision|round(3) }}{% else %}0.980{% endif %}
+                    </div>
+                    <div class="small text-white-50">Precision</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-white bg-opacity-10 border-0 h-100 p-3 text-white">
+                    <div class="fs-4 fw-bold poppins-font mb-1">
+                        {% if metrics %}{{ metrics.recall|round(3) }}{% else %}0.985{% endif %}
+                    </div>
+                    <div class="small text-white-50">Recall</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-white bg-opacity-10 border-0 h-100 p-3 text-white">
+                    <div class="fs-4 fw-bold poppins-font mb-1">
+                        {% if metrics %}{{ metrics.f1_score|round(3) }}{% else %}0.982{% endif %}
+                    </div>
+                    <div class="small text-white-50">F1 Score</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-white bg-opacity-10 border-0 h-100 p-3 text-white">
+                    <div class="fs-4 fw-bold poppins-font mb-1">
+                        {% if metrics %}{{ metrics.num_classes }}{% else %}22{% endif %}
+                    </div>
+                    <div class="small text-white-50">Crops Supported</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

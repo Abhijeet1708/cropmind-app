@@ -1,4 +1,6 @@
 import os
+import json
+import pickle
 from pathlib import Path
 from flask import Flask
 from dotenv import load_dotenv
@@ -7,6 +9,20 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+
+# Load ML artifacts and knowledge bases at startup
+base_dir = Path(__file__).parent
+try:
+    with open(base_dir / 'models' / 'model.pkl', 'rb') as f:
+        app.config['MODEL'] = pickle.load(f)
+    with open(base_dir / 'models' / 'scaler.pkl', 'rb') as f:
+        app.config['SCALER'] = pickle.load(f)
+    with open(base_dir / 'data' / 'crop_knowledge.json', 'r') as f:
+        app.config['KNOWLEDGE'] = json.load(f)
+    with open(base_dir / 'data' / 'crop_rotation.json', 'r') as f:
+        app.config['ROTATION'] = json.load(f)
+except Exception as e:
+    print(f"Warning: Failed to load application artifacts: {e}")
 
 # Register Blueprints
 from routes.main import main_bp

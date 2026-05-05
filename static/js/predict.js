@@ -24,11 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Prediction Form Submit (Mock for now, will be implemented in commit 8)
+    // Prediction Form Submit
     const form = document.getElementById('prediction-form');
     const submitBtn = document.getElementById('predict-submit-btn');
     const btnText = submitBtn.querySelector('.btn-text');
     const spinner = submitBtn.querySelector('.spinner-border');
+    
+    const emptyState = document.getElementById('result-empty-state');
+    const resultPanel = document.getElementById('result-panel');
+    const resultEmoji = document.getElementById('result-emoji');
+    const resultCropName = document.getElementById('result-crop-name');
+    const resultConfidenceText = document.getElementById('result-confidence-text');
+    const resultConfidenceBar = document.getElementById('result-confidence-bar');
+    const resultDescription = document.getElementById('result-description');
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -38,11 +46,52 @@ document.addEventListener('DOMContentLoaded', () => {
         btnText.textContent = 'Analyzing...';
         spinner.classList.remove('d-none');
 
-        // Simulate API call delay for now
-        setTimeout(() => {
+        // Collect data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('/api/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.error || 'Failed to predict crop');
+            }
+
+            // Update UI
+            resultEmoji.textContent = result.emoji;
+            resultCropName.textContent = result.crop;
+            
+            const confFormatted = result.confidence.toFixed(1) + '%';
+            resultConfidenceText.textContent = confFormatted;
+            resultConfidenceBar.style.width = confFormatted;
+            resultConfidenceBar.setAttribute('aria-valuenow', result.confidence);
+            
+            resultDescription.textContent = result.description;
+
+            // Animate transition
+            emptyState.classList.add('d-none');
+            resultPanel.classList.remove('d-none');
+            
+            // Trigger reflow to ensure CSS transition works
+            void resultPanel.offsetWidth;
+            
+            resultPanel.style.opacity = '1';
+            resultPanel.style.transform = 'translateY(0)';
+            
+            // Store result in window for later commits (chart, pdf, share)
+            window.lastPrediction = { ...data, ...result };
+            
+        } catch (error) {
+            alert(`Error: ${error.message}`);
+        } finally {
             submitBtn.disabled = false;
             btnText.textContent = 'Predict Crop';
             spinner.classList.add('d-none');
-        }, 1000);
+        }
     });
 });

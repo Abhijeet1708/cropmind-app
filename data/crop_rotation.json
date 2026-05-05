@@ -1,0 +1,398 @@
+{
+    "rice": {
+        "season1": {
+            "name": "Rice",
+            "emoji": "\ud83c\udf3e",
+            "soil_effect": "Current crop drawing specific nutrients based on Rice profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "maize": {
+        "season1": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Current crop drawing specific nutrients based on Maize profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "chickpea": {
+        "season1": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Current crop drawing specific nutrients based on Chickpea profile."
+        },
+        "season2": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "kidneybeans": {
+        "season1": {
+            "name": "Kidneybeans",
+            "emoji": "\ud83e\uded8",
+            "soil_effect": "Current crop drawing specific nutrients based on Kidneybeans profile."
+        },
+        "season2": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "pigeonpeas": {
+        "season1": {
+            "name": "Pigeonpeas",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Current crop drawing specific nutrients based on Pigeonpeas profile."
+        },
+        "season2": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "mothbeans": {
+        "season1": {
+            "name": "Mothbeans",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Current crop drawing specific nutrients based on Mothbeans profile."
+        },
+        "season2": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "mungbean": {
+        "season1": {
+            "name": "Mungbean",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Current crop drawing specific nutrients based on Mungbean profile."
+        },
+        "season2": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "blackgram": {
+        "season1": {
+            "name": "Blackgram",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Current crop drawing specific nutrients based on Blackgram profile."
+        },
+        "season2": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "lentil": {
+        "season1": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Current crop drawing specific nutrients based on Lentil profile."
+        },
+        "season2": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Lentil",
+            "emoji": "\ud83c\udf72",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "pomegranate": {
+        "season1": {
+            "name": "Pomegranate",
+            "emoji": "\ud83c\udf4e",
+            "soil_effect": "Current crop drawing specific nutrients based on Pomegranate profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "banana": {
+        "season1": {
+            "name": "Banana",
+            "emoji": "\ud83c\udf4c",
+            "soil_effect": "Current crop drawing specific nutrients based on Banana profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "mango": {
+        "season1": {
+            "name": "Mango",
+            "emoji": "\ud83e\udd6d",
+            "soil_effect": "Current crop drawing specific nutrients based on Mango profile."
+        },
+        "season2": {
+            "name": "Intercropping (Legumes)",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Cover Crops",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "grapes": {
+        "season1": {
+            "name": "Grapes",
+            "emoji": "\ud83c\udf47",
+            "soil_effect": "Current crop drawing specific nutrients based on Grapes profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "watermelon": {
+        "season1": {
+            "name": "Watermelon",
+            "emoji": "\ud83c\udf49",
+            "soil_effect": "Current crop drawing specific nutrients based on Watermelon profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "muskmelon": {
+        "season1": {
+            "name": "Muskmelon",
+            "emoji": "\ud83c\udf48",
+            "soil_effect": "Current crop drawing specific nutrients based on Muskmelon profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "apple": {
+        "season1": {
+            "name": "Apple",
+            "emoji": "\ud83c\udf4e",
+            "soil_effect": "Current crop drawing specific nutrients based on Apple profile."
+        },
+        "season2": {
+            "name": "Intercropping (Legumes)",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Cover Crops",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "orange": {
+        "season1": {
+            "name": "Orange",
+            "emoji": "\ud83c\udf4a",
+            "soil_effect": "Current crop drawing specific nutrients based on Orange profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "papaya": {
+        "season1": {
+            "name": "Papaya",
+            "emoji": "\ud83c\udf48",
+            "soil_effect": "Current crop drawing specific nutrients based on Papaya profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "coconut": {
+        "season1": {
+            "name": "Coconut",
+            "emoji": "\ud83e\udd65",
+            "soil_effect": "Current crop drawing specific nutrients based on Coconut profile."
+        },
+        "season2": {
+            "name": "Intercropping (Legumes)",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Cover Crops",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "cotton": {
+        "season1": {
+            "name": "Cotton",
+            "emoji": "\u2601\ufe0f",
+            "soil_effect": "Current crop drawing specific nutrients based on Cotton profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "jute": {
+        "season1": {
+            "name": "Jute",
+            "emoji": "\ud83c\udf3f",
+            "soil_effect": "Current crop drawing specific nutrients based on Jute profile."
+        },
+        "season2": {
+            "name": "Chickpea",
+            "emoji": "\ud83e\udd5c",
+            "soil_effect": "Fixes atmospheric nitrogen and breaks pest cycles."
+        },
+        "season3": {
+            "name": "Maize",
+            "emoji": "\ud83c\udf3d",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    },
+    "coffee": {
+        "season1": {
+            "name": "Coffee",
+            "emoji": "\u2615",
+            "soil_effect": "Current crop drawing specific nutrients based on Coffee profile."
+        },
+        "season2": {
+            "name": "Intercropping (Legumes)",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Deep root system accesses lower soil layers."
+        },
+        "season3": {
+            "name": "Cover Crops",
+            "emoji": "\ud83c\udf31",
+            "soil_effect": "Utilizes residual nutrients and improves soil structure."
+        },
+        "rationale": "This rotation sequence ensures optimal nutrient cycling. The legume phase replenishes nitrogen, while the cereal phase builds organic matter."
+    }
+}

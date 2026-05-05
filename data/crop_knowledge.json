@@ -1,0 +1,838 @@
+{
+    "rice": {
+        "name": "Rice",
+        "emoji": "\ud83c\udf3e",
+        "description": "Rice is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "maize": {
+        "name": "Maize",
+        "emoji": "\ud83c\udf3d",
+        "description": "Maize is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "chickpea": {
+        "name": "Chickpea",
+        "emoji": "\ud83e\udd5c",
+        "description": "Chickpea is a major rabi crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Rabi",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "kidneybeans": {
+        "name": "Kidneybeans",
+        "emoji": "\ud83e\uded8",
+        "description": "Kidneybeans is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "pigeonpeas": {
+        "name": "Pigeonpeas",
+        "emoji": "\ud83c\udf31",
+        "description": "Pigeonpeas is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "mothbeans": {
+        "name": "Mothbeans",
+        "emoji": "\ud83c\udf31",
+        "description": "Mothbeans is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "mungbean": {
+        "name": "Mungbean",
+        "emoji": "\ud83c\udf31",
+        "description": "Mungbean is a major zaid crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Zaid",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "blackgram": {
+        "name": "Blackgram",
+        "emoji": "\ud83c\udf31",
+        "description": "Blackgram is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "lentil": {
+        "name": "Lentil",
+        "emoji": "\ud83c\udf72",
+        "description": "Lentil is a major rabi crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Rabi",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "pomegranate": {
+        "name": "Pomegranate",
+        "emoji": "\ud83c\udf4e",
+        "description": "Pomegranate is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "banana": {
+        "name": "Banana",
+        "emoji": "\ud83c\udf4c",
+        "description": "Banana is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "mango": {
+        "name": "Mango",
+        "emoji": "\ud83e\udd6d",
+        "description": "Mango is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "grapes": {
+        "name": "Grapes",
+        "emoji": "\ud83c\udf47",
+        "description": "Grapes is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "watermelon": {
+        "name": "Watermelon",
+        "emoji": "\ud83c\udf49",
+        "description": "Watermelon is a major zaid crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Zaid",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "muskmelon": {
+        "name": "Muskmelon",
+        "emoji": "\ud83c\udf48",
+        "description": "Muskmelon is a major zaid crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Zaid",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "apple": {
+        "name": "Apple",
+        "emoji": "\ud83c\udf4e",
+        "description": "Apple is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "orange": {
+        "name": "Orange",
+        "emoji": "\ud83c\udf4a",
+        "description": "Orange is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "papaya": {
+        "name": "Papaya",
+        "emoji": "\ud83c\udf48",
+        "description": "Papaya is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "coconut": {
+        "name": "Coconut",
+        "emoji": "\ud83e\udd65",
+        "description": "Coconut is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "cotton": {
+        "name": "Cotton",
+        "emoji": "\u2601\ufe0f",
+        "description": "Cotton is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "jute": {
+        "name": "Jute",
+        "emoji": "\ud83c\udf3f",
+        "description": "Jute is a major kharif crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Kharif",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    },
+    "coffee": {
+        "name": "Coffee",
+        "emoji": "\u2615",
+        "description": "Coffee is a major perennial crop that thrives in specific soil conditions. It requires careful management of NPK levels and adequate water supply.",
+        "ideal_n": [
+            20,
+            80
+        ],
+        "ideal_p": [
+            20,
+            60
+        ],
+        "ideal_k": [
+            20,
+            50
+        ],
+        "ideal_temp": [
+            20,
+            30
+        ],
+        "ideal_humidity": [
+            50,
+            80
+        ],
+        "ideal_ph": [
+            5.5,
+            7.0
+        ],
+        "ideal_rainfall": [
+            50,
+            150
+        ],
+        "season": "Perennial",
+        "diseases": [
+            "Blight",
+            "Root Rot"
+        ]
+    }
+}

@@ -86,6 +86,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Store result in window for later commits (chart, pdf, share)
             window.lastPrediction = { ...data, ...result };
             
+            // Render Chart
+            renderChart(result.feature_importance);
+            
         } catch (error) {
             alert(`Error: ${error.message}`);
         } finally {
@@ -94,4 +97,50 @@ document.addEventListener('DOMContentLoaded', () => {
             spinner.classList.add('d-none');
         }
     });
+
+    let chartInstance = null;
+
+    function renderChart(importances) {
+        const ctx = document.getElementById('feature-importance-chart').getContext('2d');
+        
+        // Sort importances
+        const entries = Object.entries(importances).sort((a, b) => b[1] - a[1]);
+        const labels = entries.map(e => e[0].toUpperCase());
+        const data = entries.map(e => (e[1] * 100).toFixed(2));
+
+        // Generate colors from light green to dark green
+        const colors = data.map((val, index) => {
+            const alpha = 1 - (index * 0.1);
+            return `rgba(27, 67, 50, ${Math.max(0.2, alpha)})`;
+        });
+
+        if (chartInstance) {
+            chartInstance.destroy();
+        }
+
+        chartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Importance (%)',
+                    data: data,
+                    backgroundColor: colors,
+                    borderWidth: 1,
+                    borderColor: '#1B4332'
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { beginAtZero: true, max: 100 }
+                }
+            }
+        });
+    }
 });

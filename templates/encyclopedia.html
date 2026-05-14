@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bg-primary-green text-white py-5 shadow-sm mb-5">
+    <div class="container text-center">
+        <h1 class="fw-bold poppins-font mb-3"><i class="bi bi-book me-2"></i>Crop Encyclopedia</h1>
+        <p class="lead mb-0 text-white-50">Explore optimal conditions and agronomic details for 22 different crops.</p>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <!-- Search and Filter -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <div class="input-group input-group-lg shadow-sm">
+                <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                <input type="text" id="encyclopedia-search" class="form-control border-start-0 ps-0 poppins-font" placeholder="Search crops by name or description...">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <select id="encyclopedia-season" class="form-select form-select-lg shadow-sm poppins-font text-muted">
+                <option value="">All Seasons</option>
+                <option value="Kharif">Kharif</option>
+                <option value="Rabi">Rabi</option>
+                <option value="Zaid">Zaid</option>
+                <option value="Year-round">Year-round</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Crop Grid -->
+    <div class="row g-4" id="crop-grid">
+        {% for crop, info in knowledge.items() %}
+        <div class="col-sm-6 col-md-4 col-lg-3 crop-card-wrapper" data-name="{{ crop|lower }}" data-season="{{ info.season }}" data-desc="{{ info.description|lower }}">
+            <div class="card h-100 border-0 shadow-sm rounded-4 crop-card cursor-pointer" data-crop="{{ crop }}" style="transition: transform 0.2s, box-shadow 0.2s;">
+                <div class="card-body text-center p-4">
+                    <div class="display-1 mb-3">{{ info.emoji }}</div>
+                    <h5 class="fw-bold poppins-font text-capitalize text-primary-green mb-1">{{ crop }}</h5>
+                    <div class="badge bg-light text-muted mb-3">{{ info.season }}</div>
+                    <p class="small text-muted mb-0" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                        {{ info.description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Empty State -->
+    <div id="encyclopedia-empty" class="text-center py-5 d-none">
+        <div class="display-1 text-muted mb-3 opacity-25"><i class="bi bi-search"></i></div>
+        <h4 class="fw-bold text-muted poppins-font">No crops found</h4>
+        <p class="text-muted small">Try adjusting your search or season filter.</p>
+    </div>
+</div>
+
+<!-- Crop Detail Modal -->
+<div class="modal fade" id="cropModal" tabindex="-1" aria-labelledby="cropModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 shadow">
+      <div class="modal-header border-bottom-0 pb-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-4 px-md-5 pb-5">
+        <div class="text-center mb-4">
+            <div id="modal-emoji" class="display-1 mb-2">🌱</div>
+            <h2 id="modal-title" class="fw-bold poppins-font text-capitalize text-primary-green mb-1">Crop Name</h2>
+            <div id="modal-season" class="badge bg-accent-amber text-white px-3 py-2 rounded-pill mt-2">Season</div>
+        </div>
+        
+        <p id="modal-desc" class="text-muted text-center mb-5 lh-lg"></p>
+        
+        <div class="row g-4">
+            <div class="col-md-6">
+                <h6 class="fw-bold poppins-font border-bottom pb-2 mb-3">Optimal Conditions</h6>
+                <ul class="list-group list-group-flush small">
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <span class="text-muted">Nitrogen (N)</span>
+                        <span id="modal-n" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <span class="text-muted">Phosphorus (P)</span>
+                        <span id="modal-p" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <span class="text-muted">Potassium (K)</span>
+                        <span id="modal-k" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <span class="text-muted">pH Level</span>
+                        <span id="modal-ph" class="fw-bold"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h6 class="fw-bold poppins-font border-bottom pb-2 mb-3">Nutrient Profile</h6>
+                <div style="height: 200px;">
+                    <canvas id="nutrient-radar-chart"></canvas>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Knowledge Data for JS -->
+<script id="knowledge-data" type="application/json">
+{{ knowledge | tojson | safe }}
+</script>
+{% endblock %}
+
+{% block page_scripts %}
+<script src="{{ url_for('static', filename='js/encyclopedia.js') }}"></script>
+{% endblock %}

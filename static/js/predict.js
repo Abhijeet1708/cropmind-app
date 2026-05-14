@@ -86,6 +86,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Store result in window for later commits (chart, pdf, share)
             window.lastPrediction = { ...data, ...result };
             
+            // Save to history
+            const historyObj = { ...window.lastPrediction, timestamp: new Date().getTime() };
+            let history = JSON.parse(localStorage.getItem('cropmind_history')) || [];
+            history.unshift(historyObj); // Add to beginning
+            localStorage.setItem('cropmind_history', JSON.stringify(history));
+            
             // Render Chart
             renderChart(result.feature_importance);
             

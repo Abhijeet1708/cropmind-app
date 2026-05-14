@@ -17,3 +17,7 @@ def index():
 @main_bp.route('/result/<token>')
 def shared_result(token):
     return render_template('result.html', token=token)
+
+@main_bp.route('/history')
+def history():
+    return render_template('history.html')

@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'dev_secret_key_123')
 
 # Load ML artifacts and knowledge bases at startup
 base_dir = Path(__file__).parent
